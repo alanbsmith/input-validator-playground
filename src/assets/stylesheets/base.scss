@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #FFF;
+  color: #333;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  height: 100%;
+  margin: 0;
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    outline: none;
+  }
+  #root {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    > * {
+      height: 100%;
+    }
+  }
+}
+
+.phone-input {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  min-width: 300px;
+}
+
+.phone-input__label {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.phone-input__field {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #666;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+  padding: 8px 0;
+  transition: border-bottom 200ms ease;
+  &:focus {
+    border-bottom-color: #1FB6FF;
+  }
+  &.error {
+    color: #FF4949;
+    border-bottom-color: #FF4949;
+  }
+}
+
+.phone-input__warning {
+  color: #FF4949;
+  font-size: 12px;
+  padding: 8px 0;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.phone-input__submit {
+  background: #1FB6FF;
+  border-radius: 2px;
+  border: none;
+  color: #FFF;
+  font-size: 16px;
+  outline: none;
+  padding: 8px;
+  text-transform: uppercase;
+  transition: all 200ms ease;
+  &.disabled {
+    opacity: 0.5;
+    background: #666;
+  }
+}
