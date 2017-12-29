@@ -15,7 +15,6 @@ class App extends Component {
 
   handleChange(phoneNumber) {
     this.setState({
-      inputError,
       phoneNumber
     });
   }
